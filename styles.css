@@ -106,6 +106,10 @@ p {
     transition: background-color .3s;
 }
 
+.button:visited {
+    color: #fff;
+}
+
 .button:hover {
     color: #fff;
     background-color: #1C75BC;
