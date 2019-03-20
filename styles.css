@@ -11,7 +11,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-
 a {
     color: #0a0a0a;
     text-decoration: none;
@@ -24,7 +23,6 @@ a:visited {
 a:hover {
     color: #1C75BC;
 }
-
 
 p {
     margin: 0 0 10px;
@@ -127,6 +125,7 @@ p {
     display: flex;
     list-style: none;
     justify-content: center;
+    padding: 0;
 }
 
 .submenu li {
@@ -365,4 +364,55 @@ section {
     margin: 0 20px;
 }
 
+@media (max-width: 768px) and (min-width: 481px) {
+    .program,
+    .person {
+        width: calc(33.3% - 15px);
+    }
 
+    .program:nth-child(4n),
+    .person:nth-child(4n) {
+        margin-right: 20px;
+    }
+
+    .program:nth-child(3n),
+    .person:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title h1 {
+        font-size: 10vw;
+    }
+
+    .main-title h2 {
+        font-size: 6.8vw;
+        line-height: 1.4;
+    }
+
+    #menu {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .main-title p {
+       max-width: 100%;
+    }
+    .submenu {
+        justify-content: space-around;
+    }
+    .submenu li {
+        margin: 0 0 10px;
+    }
+
+    .program,
+    .person {
+        width: calc(50% - 10px);
+    }
+
+    .program:nth-child(2n),
+    .person:nth-child(2n) {
+        margin-right: 0;
+    }
+}
