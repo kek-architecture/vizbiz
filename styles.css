@@ -108,6 +108,11 @@ p {
     transition: background-color .3s;
 }
 
+.button:hover {
+    color: #fff;
+    background-color: #1C75BC;
+}
+
 #menu.fixed {
     position: fixed;
     top: 0;
