@@ -7,7 +7,9 @@ window.addEventListener('scroll', () => {
     pos = window.pageYOffset
     menu.classList.add('fixed')
   }
-  if (window.pageYOffset < pos && menu.classList.contains('fixed')) {
+
+  console.log(pos)
+  if (window.pageYOffset < pos) {
     menu.classList.remove('fixed')
   }
 })
