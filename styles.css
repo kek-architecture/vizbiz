@@ -33,6 +33,71 @@ p {
     letter-spacing: 0.01em;
 }
 
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    margin: 0;
+    z-index: 10;
+    background: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+#menu {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1px;
+    box-sizing: border-box;
+}
+
+#menu .menu-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: #0a0a0a;
+    transition: color .2s;
+}
+
+#menu .menu-link:hover {
+    color: #1C75BC;
+}
+
+header .img-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .img-wrapper.kek {
+    height: 100%;
+    left: 20px
+}
+
+header .img-wrapper.brick {
+    height: 25%;
+    right: 20px;
+}
+
+header .img-wrapper img {
+    height: 100%;
+}
+
+section {
+    padding: 110px 0 20px;
+    margin-top: -80px;
+}
+
+
 .pillarbox {
     width: 100%;
     max-width: 1200px;
@@ -46,6 +111,8 @@ p {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    padding-top: 110px;
+    margin-top: 0;
 }
 
 .main-title h1 {
@@ -113,59 +180,6 @@ p {
 .button:hover {
     color: #fff;
     background-color: #1C75BC;
-}
-
-#menu {
-    height: 50px;
-}
-
-.submenu {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    padding: 15px 10px;
-    margin-top: -1px;
-    box-sizing: border-box;
-    transform: none;
-    transition: opacity 0s 0s, margin-top 0s;
-
-}
-
-.fixed-menu .submenu {
-    opacity: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    margin: 0;
-    z-index: 10;
-    background: white;
-    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.1);
-    transition: opacity 0s 0s, margin-top .5s;
-}
-
-.fixed-menu .submenu.visible {
-    opacity: 1;
-    transition: opacity 2s .5s;
-}
-
-.submenu li {
-    margin: 0 20px;
-}
-
-.submenu .menu-link {
-    font-size: 16px;
-    font-weight: 300;
-    color: #0a0a0a;
-    transition: color .2s;
-}
-
-.submenu .menu-link:hover {
-    color: #1C75BC;
-}
-
-section {
-    padding: 30px 0 20px;
 }
 
 #about {
