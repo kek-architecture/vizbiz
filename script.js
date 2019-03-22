@@ -1,8 +1,4 @@
 const menu = document.getElementById('menu')
-
-const LIFTED = 'lifted'
-
-
 const menulinks = menu.querySelectorAll('#menu a')
 
 menulinks.forEach(link => {
@@ -19,15 +15,16 @@ menulinks.forEach(link => {
   })
 })
 
-const people = document.querySelectorAll('.menu .person')
+const people = document.querySelectorAll('.person')
 
 people.forEach(p => {
   p.addEventListener('click', (e) => {
+    console.debug(e.currentTarget, e.target)
     const text = e.currentTarget.querySelector('.description')
-    if (text.classList.contains(LIFTED)) {
-      text.classList.remove(LIFTED)
+    if (text.classList.contains('lifted')) {
+      text.classList.remove('lifted')
     } else {
-      text.classList.add(LIFTED)
+      text.classList.add('lifted')
     }
   })
 })

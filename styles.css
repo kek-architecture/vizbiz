@@ -100,6 +100,10 @@ section {
     margin-top: -80px;
 }
 
+section:not(.main-title)  h1 {
+    font-size: 44px;
+}
+
 .pillarbox {
     width: 100%;
     max-width: 1200px;
@@ -310,7 +314,7 @@ section {
 
 .prices-block {
     padding: 20px 0;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -330,6 +334,11 @@ section {
 .prices-block p span {
     align-self: flex-end;
     font-weight: 300;
+}
+
+#tickets .description {
+    width: 75%;
+    margin: 0 auto;
 }
 
 #tickets .smallcase {
@@ -433,7 +442,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     header {
         justify-content: space-between;
         padding: 0 20px;
