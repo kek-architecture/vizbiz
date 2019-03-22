@@ -31,3 +31,15 @@ people.forEach(p => {
     }
   })
 })
+
+if (window.innerWidth <= 768) {
+  const mobileButton = document.getElementById('hamburger')
+
+  mobileButton.addEventListener('click', () => {
+    if (document.body.classList.contains('mobile-active')) {
+      document.body.classList.remove('mobile-active')
+    } else {
+      document.body.classList.add('mobile-active')
+    }
+  })
+}
