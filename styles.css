@@ -146,7 +146,7 @@ p {
 
 .fixed-menu .submenu.visible {
     opacity: 1;
-    transition: opacity 4s 1s;
+    transition: opacity 2s .5s;
 }
 
 .submenu li {
@@ -464,6 +464,10 @@ section {
 
     .main-title p {
         max-width: 100%;
+    }
+
+    #menu {
+        height: 120px;
     }
 
     .submenu {
