@@ -1,16 +1,17 @@
 const menu = document.getElementById('menu')
+const submenu = document.getElementById('submenu')
 let pos = 0
 
 window.addEventListener('scroll', () => {
   const menubox = menu.getBoundingClientRect()
   if (menubox.top < 0) {
     pos = window.pageYOffset
-    menu.classList.add('fixed')
+    submenu.classList.add('fixed')
   }
 
   console.log(pos)
   if (window.pageYOffset < pos) {
-    menu.classList.remove('fixed')
+    submenu.classList.remove('fixed')
   }
 })
 
