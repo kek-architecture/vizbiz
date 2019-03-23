@@ -100,7 +100,7 @@ section {
     margin-top: -80px;
 }
 
-section:not(.main-title)  h1 {
+section:not(.main-title) h1 {
     font-size: 44px;
 }
 
@@ -321,14 +321,9 @@ section:not(.main-title)  h1 {
 .prices-block p {
     display: flex;
     flex-flow: column wrap;
-    justify-content: flex-end;
     font-weight: 400;
     text-align: left;
     height: 22px;
-}
-
-.prices-block br {
-    display: none;
 }
 
 .prices-block p span {
@@ -342,6 +337,8 @@ section:not(.main-title)  h1 {
 }
 
 #tickets .smallcase {
+    width: 75%;
+    margin: 0 auto;
     font-size: 15px;
     font-weight: 300;
 }
@@ -432,14 +429,6 @@ section:not(.main-title)  h1 {
     .prices-block {
         width: 80%;
     }
-
-    .prices-block p:nth-child(4) {
-        height: 48px;
-    }
-
-    .prices-block p:nth-child(4) br {
-        display: block;
-    }
 }
 
 @media (max-width: 890px) {
@@ -489,6 +478,13 @@ section:not(.main-title)  h1 {
         background-color: #fff;
         box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1);
     }
+
+    .mobile-active header #hamburger::after {
+        height: 100%;
+        top: 0;
+        box-shadow: none;
+        background: url('images/close.svg') center / contain no-repeat transparent;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 521px) {
@@ -515,12 +511,14 @@ section:not(.main-title)  h1 {
         margin-right: 60px;
     }
 
-    .prices-block p:nth-child(8) {
+    #tickets .prices-block p:last-child {
         height: 48px;
     }
+}
 
-    .prices-block p:nth-child(8) br {
-        display: block;
+@media (min-width: 769px) {
+    #tickets .prices-block br {
+        display: none;
     }
 }
 
@@ -530,37 +528,72 @@ section:not(.main-title)  h1 {
         line-height: 1.2;
     }
 
+    section:not(.main-title) h1 {
+        font-size: 8vw;
+        line-height: 1.2;
+    }
+
     .main-title h2 {
         font-size: 6.8vw;
         line-height: 1.4;
-    }
-
-    #menu {
-        padding: 0 20px;
-        box-sizing: border-box;
     }
 
     .main-title p {
         max-width: 100%;
     }
 
-    #menu {
-        height: 120px;
+    p {
+        font-size: 15px;
     }
 
-    .submenu {
-        height: 120px;
-        padding: 10px 0 0;
-        flex-direction: column;
-        flex-wrap: wrap;
+    header {
+        height: 80px;
+        padding: 10px 20px;
+        justify-content: flex-start;
         align-items: center;
     }
 
-    .fixed-menu .submenu {
-        padding: 10px 60px 0;
+    header .img-wrapper.kek,
+    header .img-wrapper.brick {
+        position: static;
     }
 
-    .submenu li {
+    header .img-wrapper.kek {
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    header .img-wrapper.brick {
+        height: 14px;
+    }
+
+    header #hamburger {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+    header #hamburger::after {
+        top: 11px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        box-shadow: 0 8px 0 #0a0a0a, 0 16px 0 #0a0a0a;
+    }
+
+    .mobile-active header #menu {
+        height: 240px;
+        padding: 10px 60px 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+
+    #menu a {
+        font-size: 14px;
         margin: 0 0 10px;
     }
 
@@ -579,6 +612,10 @@ section:not(.main-title)  h1 {
         margin-right: 0;
     }
 
+    #tickets .description {
+        width: 100%;
+    }
+
     .prices-block {
         width: 100%;
     }
@@ -586,11 +623,20 @@ section:not(.main-title)  h1 {
     .prices-block p {
         height: 58px;
         flex-flow: row wrap;
+        justify-content: flex-start;
     }
 
-    .prices-block p:nth-child(4),
-    .prices-block p:nth-child(7) {
-        height: 84px;
+    .prices-block p span {
+        align-self: stretch;
+        margin-left: 40px;
+    }
+
+    #tickets .smallcase {
+        width: 90%;
+    }
+
+    #tickets .smallcase br {
+        display: none;
     }
 }
 
