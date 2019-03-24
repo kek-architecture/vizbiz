@@ -641,6 +641,15 @@ section:not(.main-title) h1 {
 }
 
 @media (max-width: 400px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .img-wrapper.kek {
+        height: 40px;
+    }
+
     .main-title h1 {
         font-size: 9.2vw;
     }
@@ -664,6 +673,7 @@ section:not(.main-title) h1 {
 
     .logos .img-wrapper {
         max-width: 50%;
+        margin: 0;
     }
 
     .logos .img-wrapper.brick {
