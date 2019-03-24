@@ -177,6 +177,8 @@ section:not(.main-title) h1 {
     background-color: #0a0a0a;
     text-transform: uppercase;
     transition: background-color .3s;
+    text-decoration: none;
+    border: none;
 }
 
 .button:visited {
@@ -186,6 +188,7 @@ section:not(.main-title) h1 {
 .button:hover {
     color: #fff;
     background-color: #1C75BC;
+    text-decoration: none;
 }
 
 #about {
@@ -195,6 +198,16 @@ section:not(.main-title) h1 {
     align-items: center;
     text-align: center;
 }
+
+#about p a,
+#about p a:visited {
+    color: #1C75BC;
+}
+
+#about p a:hover {
+    text-decoration: underline;
+}
+
 
 .program-blocks,
 .person-blocks {
@@ -209,6 +222,7 @@ section:not(.main-title) h1 {
     align-items: flex-start;
     justify-content: center;
     width: calc(25% - 15px);
+    min-height: 300px;
     padding: 20px 0 0;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -290,6 +304,10 @@ section:not(.main-title) h1 {
 .program .speakers span {
     font-family: 'Crimson', serif;
     font-style: italic;
+}
+
+.program .speakers a {
+    text-decoration: underline;
 }
 
 .ws-info {
@@ -487,7 +505,7 @@ section:not(.main-title) h1 {
     }
 }
 
-@media (max-width: 768px) and (min-width: 521px) {
+@media (max-width: 768px) and (min-width: 621px) {
     .program,
     .person {
         width: calc(33.3% - 15px);
@@ -507,10 +525,6 @@ section:not(.main-title) h1 {
         margin-right: 0;
     }
 
-    .prices-block .types {
-        margin-right: 60px;
-    }
-
     #tickets .prices-block p:last-child {
         height: 48px;
     }
@@ -519,6 +533,22 @@ section:not(.main-title) h1 {
 @media (min-width: 769px) {
     #tickets .prices-block br {
         display: none;
+    }
+}
+
+@media (max-width: 620px) and (min-width: 521px) {
+    .program,
+    .person {
+        width: calc(50% - 10px);
+    }
+
+    .person {
+        padding-bottom: calc(50% - 10px);
+    }
+
+    .program:nth-child(2n),
+    .person:nth-child(2n) {
+        margin-right: 0;
     }
 }
 
@@ -590,7 +620,6 @@ section:not(.main-title) h1 {
         align-items: center;
         box-sizing: border-box;
     }
-
 
     #menu a {
         font-size: 14px;
