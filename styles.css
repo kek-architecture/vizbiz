@@ -902,13 +902,13 @@ footer a {
 
     #about {
         flex-direction: column;
-        padding: 80px 80px 40px;
+        padding: 100px 80px 80px;
         box-sizing: border-box;
     }
 
     #program {
         flex-direction: column;
-        padding: 40px 80px;
+        padding: 40px 80px 80px;
         box-sizing: border-box;
     }
 
@@ -922,7 +922,7 @@ footer a {
 
     #about .text-columns,
     #program .text-columns {
-        width: 80%;
+        width: 100%;
         padding-top: 20px;
         -webkit-column-count: 1;
         -moz-column-count: 1;
@@ -1003,6 +1003,11 @@ footer a {
 
     .main-title p {
         max-width: 100%;
+    }
+
+    .main-title .date .button,
+    .main-title .date p {
+        font-size: 16px;
     }
 
     p {
@@ -1216,8 +1221,20 @@ footer a {
         font-size: 6.2vw;
     }
 
+    .main-title .date {
+        height: 50px
+    }
+
+    .main-title .date .button {
+        padding: 10px 30px;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+
     .main-title .date p {
-        padding: 20px;
+        padding: 10px 15px;
+        font-size: 14px;
+        line-height: 1.1;
     }
 
     #day1 .title,
