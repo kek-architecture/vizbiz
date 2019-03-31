@@ -1129,8 +1129,7 @@ footer a {
     }
 
     .person-blocks {
-        padding-right: 20px;
-        padding-left: 20px;
+        padding: 20px 0 0;
     }
 
     .person:nth-child(4n) {
