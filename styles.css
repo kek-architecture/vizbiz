@@ -254,7 +254,7 @@ section:not(.main-title) h1 {
 }
 
 #companies {
-    padding: 60px 80px 30px 80px;
+    padding: 40px 80px 20px 80px;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
@@ -263,15 +263,20 @@ section:not(.main-title) h1 {
 }
 
 #companies .img-wrapper {
-    width: calc(1 / 12 * 100%);
+    position: relative;
+    width: calc(1 / 14 * 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 40px;
+    cursor: pointer;
+    padding: 15px 0 15px;
+    z-index: 1000;
 }
 
 #companies .img-wrapper img {
     width: 100%;
+    pointer-events: none;
 }
 
 section h1 {
@@ -408,6 +413,12 @@ section h1::after {
     padding-bottom: 200px;
 }
 
+#speakers .info {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 40px;
+}
+
 .person {
     position: relative;
     width: calc(25% - 15px);
@@ -434,7 +445,7 @@ section h1::after {
 
 .person .description {
     position: absolute;
-    top: calc(100% - 46px);
+    top: calc(100% - 62px);
     left: 0;
     width: 100%;
     height: 100%;
@@ -584,12 +595,13 @@ section h1::after {
 
 .ws-info {
     margin-bottom: 40px;
+    max-width: 75%;
 }
 
 .ws-info p {
     font-size: 20px;
     color: var(--midgrey);
-    line-height: 1.1;
+    line-height: 1.3;
     margin-bottom: 20px;
 }
 
@@ -756,6 +768,10 @@ footer a {
         padding: 4vw 5.5vw 2vw 5.5vw;
     }
 
+    #companies .img-wrapper {
+        width: calc(1/12 * 100%)
+    }
+
     #about,
     #day1,
     #day2,
@@ -823,7 +839,7 @@ footer a {
     }
 
     #companies .img-wrapper {
-        width: calc(1 / 14 * 100%);
+        width: calc(1 / 8 * 100%);
     }
 }
 
@@ -1122,6 +1138,10 @@ footer a {
         padding-bottom: 80px;
     }
 
+    #speakers .info {
+        width: 100%;
+    }
+
     .person {
         width: 100%;
         margin-right: 0;
@@ -1168,6 +1188,10 @@ footer a {
 
     .program {
         flex-direction: column;
+    }
+
+    .ws-info {
+        max-width: 100%;
     }
 
     .program p,
