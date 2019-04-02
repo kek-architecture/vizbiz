@@ -80,7 +80,8 @@ header {
 
 #menu .menu-link {
     font-size: 14px;
-    font-weight: 300;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     color: #4D4D4D;
     transition: color .2s;
@@ -170,16 +171,16 @@ section:not(.main-title) h1 {
 }
 
 .main-title h1 {
-    font-size: 56px;
+    font-size: 66px;
     line-height: 1;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .main-title h2 {
     font-family: 'Proxima Nova Rg', sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 1.1;
     letter-spacing: 0.01em;
     text-align: left;
@@ -210,7 +211,7 @@ section:not(.main-title) h1 {
 .main-title .date {
     position: absolute;
     right: 8vw;
-    bottom: 12vw;
+    bottom: 8vw;
     display: flex;
     height: 70px;
 }
@@ -267,14 +268,18 @@ section:not(.main-title) h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 45px;
     cursor: pointer;
     padding: 15px 0 15px;
 }
 
+#companies .img-wrapper:last-of-type {
+    margin-right: 0;
+}
+
 #companies .img-wrapper img {
     width: 100%;
-    pointer-events: none;
+    pointer-events:  none;
 }
 
 section h1 {
@@ -289,9 +294,9 @@ section h1::after {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 60%;
-    max-width: 6vw;
-    height: 1px;
+    width: 50%;
+    max-width: 5vw;
+    height: 2px;
     transform: translateX(-50%);
     background-color: var(--blue);
 }
@@ -302,14 +307,6 @@ section h1::after {
     width: 100%;
     padding: 110px 80px 120px;
     box-sizing: border-box;
-}
-
-#program {
-    padding-top: 60px;
-    padding-bottom: 100px;
-    margin-top: 0;
-    background-color: var(--darkgrey);
-    color: #fff;
 }
 
 #about h1,
@@ -364,6 +361,10 @@ section h1::after {
     text-decoration: underline;
 }
 
+#register {
+    padding: 80px 0 0;
+}
+
 #discover {
     display: flex;
     justify-content: space-around;
@@ -371,6 +372,8 @@ section h1::after {
     padding: 40px;
     background-color: var(--grey);
     color: var(--orange);
+    margin-top: 0;
+    /*margin-bottom: -120px;*/
 }
 
 #discover p {
@@ -462,6 +465,10 @@ section h1::after {
     font-size: 14px;
 }
 
+.person .description span a {
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
 .person .description.lifted {
     top: 0;
     transition: top .45s;
@@ -487,19 +494,15 @@ section h1::after {
     padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
-    background-color: var(--darkgrey);
+    margin-bottom: -100px;
     color: #fff;
-}
-
-#day1 {
-    padding-top: 0;
 }
 
 #day1 .title,
 #day2 .title {
     width: 100%;
     padding: 40px 80px;
-    background-color: var(--grey);
+    background-color: var(--orange);
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -512,7 +515,7 @@ section h1::after {
     font-family: 'Proxima Nova Sb', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    color: var(--blue);
+    color: #fff;
     text-align: left;
     text-transform: uppercase;
 }
@@ -527,6 +530,7 @@ section h1::after {
 
 .program-list {
     padding: 40px 80px;
+    background-color: var(--darkgrey);
 }
 
 .program {
@@ -664,6 +668,7 @@ section h1::after {
 }
 
 #contact {
+    padding-top: 160px;
     text-align: center;
 }
 
@@ -715,6 +720,7 @@ section h1::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;i
     padding: 20px 0 10px;
 }
 
@@ -733,7 +739,11 @@ section h1::after {
 }
 
 .logos .img-wrapper.partner {
-    height: 120px;
+    width: 100px;
+}
+
+.logos .img-wrapper.auto {
+    padding: 10px;
 }
 
 .logos .img-wrapper.partner img {
@@ -1299,6 +1309,6 @@ footer a {
     }
 
     #companies {
-        height: 142px;
+        height: 255px;
     }
 }
