@@ -263,7 +263,6 @@ section:not(.main-title) h1 {
 }
 
 #companies .img-wrapper {
-    position: relative;
     width: calc(1 / 14 * 100%);
     display: flex;
     justify-content: center;
@@ -271,7 +270,6 @@ section:not(.main-title) h1 {
     margin-right: 40px;
     cursor: pointer;
     padding: 15px 0 15px;
-    z-index: 1000;
 }
 
 #companies .img-wrapper img {
@@ -371,7 +369,6 @@ section h1::after {
     justify-content: space-around;
     align-items: center;
     padding: 40px;
-    margin-top: 0;
     background-color: var(--grey);
     color: var(--orange);
 }
@@ -494,6 +491,10 @@ section h1::after {
     color: #fff;
 }
 
+#day1 {
+    padding-top: 0;
+}
+
 #day1 .title,
 #day2 .title {
     width: 100%;
@@ -520,7 +521,6 @@ section h1::after {
 #day2 .title span {
     display: inline-block;
     text-align: left;
-    text-transform: none;
     font-family: 'Proxima Nova Lt', sans-serif;
     font-weight: 300;
 }
