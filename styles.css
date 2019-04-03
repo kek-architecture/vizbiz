@@ -166,7 +166,7 @@ section:not(.main-title) h1 {
 .main-title .text {
     position: absolute;
     top: 20vw;
-    left: 10vw;
+    left: 14vw;
     color: #fff;
 }
 
@@ -191,9 +191,8 @@ section:not(.main-title) h1 {
     max-width: 50vw;
     padding-left: 10vw;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 300;
-    font-style: italic;
     line-height: 26px;
     text-align: left;
 }
@@ -202,7 +201,7 @@ section:not(.main-title) h1 {
     position: absolute;
     content: '';
     width: 8vw;
-    height: 1px;
+    height: 2px;
     top: 15px;
     left: -3vw;
     background-color: #fff;
@@ -225,7 +224,7 @@ section:not(.main-title) h1 {
     font-family: 'Proxima Nova Rg', sans-serif;
     font-weight: 400;
     font-size: 19px;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .5);
     box-sizing: border-box;
 }
 
@@ -650,7 +649,7 @@ section h1::after {
 
 #tickets .ticket-button {
     max-width: 285px;
-    margin: 0 auto 20px;
+    margin: 20px auto 40px;
 }
 
 #tickets .smallcase {
@@ -746,6 +745,10 @@ section h1::after {
     margin: 0 60px 20px;
 }
 
+.logos .img-wrapper.academy {
+    width: 180px;
+}
+
 .logos .img-wrapper img {
     width: 100%;
 }
@@ -784,6 +787,15 @@ footer a {
 @media (min-width: 1441px) {
     header {
         height: 5.5vw;
+    }
+
+    .main-title .text {
+        left: 18vw;
+    }
+
+    .main-title .date {
+        height: 5.4vw;
+        bottom: 10vw;
     }
 
     #companies {
