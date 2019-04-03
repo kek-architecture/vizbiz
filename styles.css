@@ -228,22 +228,6 @@ section:not(.main-title) h1 {
     box-sizing: border-box;
 }
 
-.main-title .date .button {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding: 20px 80px;
-    font-family: 'Proxima Nova Rg', sans-serif;
-    font-weight: 700;
-    font-size: 19px;
-    color: var(--blue);
-    background-color: #fff;
-    text-transform: uppercase;
-    transition: color .3s;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
 .main-title .date .button:visited {
     color: var(--blue);
 }
@@ -404,7 +388,7 @@ section h1::after {
 
 .ticket-button:hover {
     color: #fff;
-    background-color: rgba(207, 62, 21, 0.73);
+    background-color: rgb(238, 99, 0);
     text-decoration: none;
 }
 
@@ -1133,8 +1117,13 @@ footer a {
         right: 40px;
     }
 
-    .main-title .date .button {
+    .main-title .date .ticket-button,
+    .ticket-button {
         padding: 20px 30px;
+    }
+
+    #tickets .ticket-button {
+        max-width: 166px;
     }
 
     section h1 {
@@ -1288,7 +1277,8 @@ footer a {
         right: 15px;
     }
 
-    .main-title .date .button {
+    .main-title .date .ticket-button,
+    .ticket-button {
         padding: 10px 30px;
         font-size: 14px;
         line-height: 1.1;
