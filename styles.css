@@ -383,7 +383,7 @@ section h1::after {
     margin: 0;
 }
 
-#discover .button {
+.ticket-button {
     color: #fff;
     background-color: var(--orange);
     display: flex;
@@ -399,11 +399,12 @@ section h1::after {
     box-sizing: border-box;
 }
 
-#discover .button:visited {
+.ticket-button:visited {
     color: #fff;
 }
 
-#discover .button:hover {
+.ticket-button:hover {
+    color: #fff;
     background-color: rgba(207, 62, 21, 0.73);
     text-decoration: none;
 }
@@ -520,14 +521,6 @@ section h1::after {
     text-transform: uppercase;
 }
 
-#day1 .title span,
-#day2 .title span {
-    display: inline-block;
-    text-align: left;
-    font-family: 'Proxima Nova Lt', sans-serif;
-    font-weight: 300;
-}
-
 .program-list {
     padding: 40px 80px;
     background-color: var(--darkgrey);
@@ -597,6 +590,12 @@ section h1::after {
     background-color: #fff;
 }
 
+
+.program .description.exhibition p a {
+    color: var(--blue);
+    margin-left: 20px;
+}
+
 .ws-info {
     margin-bottom: 40px;
     max-width: 75%;
@@ -639,6 +638,11 @@ section h1::after {
 
 #tickets p {
     text-align: center;
+}
+
+#tickets .ticket-button {
+    max-width: 285px;
+    margin: 0 auto 20px;
 }
 
 #tickets .smallcase {
@@ -720,7 +724,7 @@ section h1::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;i
+    align-items: center;
     padding: 20px 0 10px;
 }
 
@@ -812,6 +816,7 @@ footer a {
     #day1,
     #day2 {
         padding-top: 5.5vw;
+        margin-bottom: -7.2vw;
     }
 
     #day1 .title,
