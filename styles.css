@@ -262,7 +262,7 @@ section:not(.main-title) h1 {
 
 #companies .img-wrapper img {
     width: 100%;
-    pointer-events:  none;
+    pointer-events: none;
 }
 
 section h1 {
@@ -278,7 +278,7 @@ section h1::after {
     bottom: 0;
     left: 50%;
     width: 50%;
-    max-width: 5vw;
+    max-width: 4vw;
     height: 2px;
     transform: translateX(-50%);
     background-color: var(--blue);
@@ -350,7 +350,7 @@ section h1::after {
 
 #discover {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 40px;
     background-color: var(--grey);
@@ -364,6 +364,7 @@ section h1::after {
     font-family: 'Proxima Nova Sb', sans-serif;
     font-weight: 600;
     margin: 0;
+    padding-right: 100px;
 }
 
 .ticket-button {
@@ -412,6 +413,10 @@ section h1::after {
     margin-bottom: 20px;
     cursor: pointer;
     overflow: hidden;
+}
+
+.person:hover img {
+    opacity: 0.8;
 }
 
 .person:nth-child(4n) {
@@ -567,6 +572,10 @@ section h1::after {
     color: #fff;
 }
 
+.program .description.no-decor p {
+    padding-bottom: 10px;
+}
+
 .program .description.no-decor p:first-of-type::after {
     content: none;
 }
@@ -581,10 +590,13 @@ section h1::after {
     background-color: #fff;
 }
 
-
 .program .description.exhibition p a {
     color: var(--blue);
     margin-left: 20px;
+}
+
+.program .description.exhibition p:not(:first-of-type) a {
+    margin: 0;
 }
 
 .ws-info {
@@ -716,6 +728,8 @@ section h1::after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    margin: 0 auto;
     padding: 20px 0 10px;
 }
 
@@ -727,6 +741,10 @@ section h1::after {
     align-items: center;
     height: 100px;
     margin: 0 60px 20px;
+}
+
+.logos .img-wrapper.dell {
+    width: 110px;
 }
 
 .logos .img-wrapper.academy {
@@ -791,7 +809,7 @@ footer a {
     }
 
     #companies .img-wrapper {
-        width: calc(1/12 * 100%)
+        width: calc(1 / 12 * 100%)
     }
 
     #about,
@@ -972,7 +990,7 @@ footer a {
     }
 }
 
-@media (max-width: 768px) and (min-width: 621px) {
+@media (max-width: 1100px) and (min-width: 621px) {
     .person {
         width: calc(33.3% - 15px);
     }
@@ -988,7 +1006,9 @@ footer a {
     .person:nth-child(3n) {
         margin-right: 0;
     }
+}
 
+@media (max-width: 768px) and (min-width: 621px) {
     #tickets .prices-block p:last-child {
         height: 48px;
     }
@@ -1253,7 +1273,8 @@ footer a {
         display: none;
     }
 
-    #contact .info {
+    #contact .info,
+    .logos {
         width: 100%;
     }
 }
