@@ -1211,6 +1211,7 @@ footer a {
     #discover p {
         text-align: center;
         margin-bottom: 20px;
+        padding: 0;
     }
 
     #program .text-columns {
@@ -1304,8 +1305,8 @@ footer a {
 
     .main-title .date .ticket-button,
     .ticket-button {
-        padding: 10px 30px;
-        font-size: 14px;
+        padding: 10px 20px;
+        font-size: 13px;
         line-height: 1.1;
     }
 
